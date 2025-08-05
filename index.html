@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="styles.css">
+      <link rel="stylesheet"  href="styles.css">
     <title>Search Your Movie</title>
 </head>
 <body>
     <header>
         <h1>Movies Database</h1>
-        <a class="link" href="index.html">🏠</a>
-        <p>Search Your Favourite Movie</p>
+        <a class="link" href="about.html">ℹ︎</a>
+        <p>Search Your Favourit Movie</p>
     </header>
- 
+    
     <main id="mainBody">
-        <section>
-            <div id="aboutDiv">
-                <p id="aboutWebsite">This website is powered by <span class="highlight">The Open Movie Database</span></p>
+        <section id="searchSection">
+            <div id="searchDiv">
+                <input id="searchBar" type="text" title="Enter Movie" placeholder="Enter movie title">
+                <div id="searchIconDiv">
+                    <img id="icon" src="assets/icons/search.png" alt="search icon">
+                </div>
             </div>
-            
         </section>
+        <section id="movieCards">
+ 
+            <!-- Add movie cards in this section -->
+ 
+        </section>
+ 
     </main>
+ 
     <footer>
         <p>Powered by <a href="https://www.omdbapi.com/" rel="noopener" target="_blank"><span class="highlight">The Open Movie Database</span></a></p>
     </footer>
-    <script src="main.js"></script> <!-- you say it is not necessary but I'm taking no chances -->
+    
+ <script src="main.js"></script>
 </body>
 </html>
