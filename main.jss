@@ -168,7 +168,11 @@ async function checkPosterURL(movie) {
 */
 function createEmptyView() {
     console.log("createEmptyView");
- 
+    const emptyDiv = document.createElement("div");
+    emptyDiv.className = "empty-view";
+    emptyDiv.textContent = "No movies found!";
+    return emptyDiv;
+}
     /**
      * TASK : 2
      * Create empty view and append it to "movieCards" section.
