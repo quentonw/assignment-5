@@ -178,8 +178,6 @@ function createEmptyView() {
      * Create empty view and append it to "movieCards" section.
      */
  
-}
- 
 /**
 * Create a movie card using the parameter. The card should have movie title and poster. The card should follow below structure:
 *      <article class="card">
