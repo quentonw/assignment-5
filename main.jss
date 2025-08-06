@@ -169,9 +169,9 @@ async function checkPosterURL(movie) {
 function createEmptyView() {
     console.log("createEmptyView");
     const emptyDiv=document.createElement("div");
-    emptyDiv.className="empty-view";
-    emptyDiv.textContent="No movies found!";
-    return emptyDiv;
+    const emptyP=document.createElement("p");
+    emptyP.className="noresult";
+    emptyP.textContent="No movie found!!! Please search for another title.";
     const movieCardsSection=document.getElementById("movieCards");
     movieCardsSection.appendChild(emptyP);
 }
