@@ -141,3 +141,10 @@ section {
 }
 
 /* Implement your styling here */
+
+.empty-view {
+    color: #888;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 40px 0;
+}
