@@ -9,7 +9,7 @@
 * 7.) There are 3 task in this that you have to complete. Discuss with your instructor to understand the task.
 */
  
-const myApiKey = "A8d2b121"; // <<-- ADD YOUR API KEY HERE. DELETE THIS KEY before uploading your code on Github or Brightspace, 
+const myApiKey="A8d2b121"; // <<-- I have no idea if this stupid key is working but I only get one using my school email 
  
 const BASE_URL = "http://www.omdbapi.com";
  
