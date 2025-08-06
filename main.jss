@@ -168,11 +168,11 @@ async function checkPosterURL(movie) {
 */
 function createEmptyView() {
     console.log("createEmptyView");
-    const emptyDiv = document.createElement("div");
-    emptyDiv.className = "empty-view";
-    emptyDiv.textContent = "No movies found!";
+    const emptyDiv=document.createElement("div");
+    emptyDiv.className="empty-view";
+    emptyDiv.textContent="No movies found!";
     return emptyDiv;
-    const movieCardsSection = document.getElementById("movieCards");
+    const movieCardsSection=document.getElementById("movieCards");
     movieCardsSection.appendChild(emptyP);
 }
     /**
@@ -200,25 +200,20 @@ function createMovieCard(movie) {
      * Create Movie Card and append it "movieCards" section.
      */
 
-    const article = document.createElement("article");
-    article.className = "card";
-
-    const titleP = document.createElement("p");
-    titleP.className = "cardTitle";
-    titleP.textContent = movie.Title;
-
-    const posterDiv = document.createElement("div");
-    posterDiv.className = "cardPosterDiv";
-
-    const posterImg = document.createElement("img");
-    posterImg.className = "moviePoster";
-    posterImg.src = movie.Poster;
-    posterImg.alt = "Movie poster";
-
+    const article=document.createElement("article");
+    article.className="card";
+    const titleP=document.createElement("p");
+    titleP.className="cardTitle";
+    titleP.textContent=movie.Title;
+    const posterDiv=document.createElement("div");
+    posterDiv.className="cardPosterDiv";
+    const posterImg=document.createElement("img");
+    posterImg.className="moviePoster";
+    posterImg.src=movie.Poster;
+    posterImg.alt="Movie poster";
     posterDiv.appendChild(posterImg);
     article.appendChild(titleP);
     article.appendChild(posterDiv);
-
-    const movieCardsSection = document.getElementById("movieCards");
+    const movieCardsSection=document.getElementById("movieCards");
     movieCardsSection.appendChild(article);
 }
