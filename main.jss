@@ -200,6 +200,7 @@ function createMovieCard(movie) {
      * Create Movie Card and append it "movieCards" section.
      */
 
+function createMovieCard(movie) {
     const article=document.createElement("article");
     article.className="card";
     const titleP=document.createElement("p");
