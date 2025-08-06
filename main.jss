@@ -125,7 +125,11 @@ async function getMovies(movieTitle) {
              * Else write a for loop which will iterator over filteredMovies array 
              * and call createMovieCard() for each movie object in this array.
              */
- 
+             if (filteredMovies.length === 0) {
+                createEmptyView();
+            } else {
+                 filteredMovies.forEach(movie => createMovieCard(movie));
+            }
         }
     } catch(exception) {
         console.error("Exception occurred in getMovies function.")
