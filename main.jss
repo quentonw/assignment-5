@@ -125,11 +125,11 @@ async function getMovies(movieTitle) {
              * Else write a for loop which will iterator over filteredMovies array 
              * and call createMovieCard() for each movie object in this array.
              */
-             if (filteredMovies.length === 0) {
-                createEmptyView();
+            if (filteredMovies.length === 0) {
+           createEmptyView();
             } else {
-                 filteredMovies.forEach(movie => createMovieCard(movie));
-            }
+           filteredMovies.forEach(movie => createMovieCard(movie));
+}
         }
     } catch(exception) {
         console.error("Exception occurred in getMovies function.")
@@ -167,8 +167,6 @@ async function checkPosterURL(movie) {
 *      <p class="noresult">No movie found!!! Please search for another title.</p>
 */
 function createEmptyView() {
-    console.log("createEmptyView");
-    const emptyDiv=document.createElement("div");
     const emptyP=document.createElement("p");
     emptyP.className="noresult";
     emptyP.textContent="No movie found!!! Please search for another title.";
@@ -200,7 +198,6 @@ function createMovieCard(movie) {
      * Create Movie Card and append it "movieCards" section.
      */
 
-function createMovieCard(movie) {
     const article=document.createElement("article");
     article.className="card";
     const titleP=document.createElement("p");
@@ -218,3 +215,4 @@ function createMovieCard(movie) {
     const movieCardsSection=document.getElementById("movieCards");
     movieCardsSection.appendChild(article);
 }
+/** this is so confusing */
