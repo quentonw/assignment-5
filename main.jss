@@ -199,5 +199,26 @@ function createMovieCard(movie) {
      * TASK : 3
      * Create Movie Card and append it "movieCards" section.
      */
- 
+
+    const article = document.createElement("article");
+    article.className = "card";
+
+    const titleP = document.createElement("p");
+    titleP.className = "cardTitle";
+    titleP.textContent = movie.Title;
+
+    const posterDiv = document.createElement("div");
+    posterDiv.className = "cardPosterDiv";
+
+    const posterImg = document.createElement("img");
+    posterImg.className = "moviePoster";
+    posterImg.src = movie.Poster;
+    posterImg.alt = "Movie poster";
+
+    posterDiv.appendChild(posterImg);
+    article.appendChild(titleP);
+    article.appendChild(posterDiv);
+
+    const movieCardsSection = document.getElementById("movieCards");
+    movieCardsSection.appendChild(article);
 }
