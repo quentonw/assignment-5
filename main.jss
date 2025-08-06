@@ -172,6 +172,8 @@ function createEmptyView() {
     emptyDiv.className = "empty-view";
     emptyDiv.textContent = "No movies found!";
     return emptyDiv;
+    const movieCardsSection = document.getElementById("movieCards");
+    movieCardsSection.appendChild(emptyP);
 }
     /**
      * TASK : 2
